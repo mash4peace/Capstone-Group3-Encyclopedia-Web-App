@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Encyclopedia</title>
+  </head>
+  <body>
+    <form method="POST" action="">
+      Enter search term: <input type="text" name="searchText">
+      <input type="submit" name="submit" value="Submit">
+    </form>
+    {% if wikiText %}
+      {{wikiText}}!
+    {% endif %}
+  </body>
+</html>
