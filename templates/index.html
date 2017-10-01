@@ -4,11 +4,21 @@
     <title>Encyclopedia</title>
   </head>
   <body>
-    <form method="POST" action="">
+    <center>
+	<form method="POST" action="">
       Enter search term: <input type="text" name="searchText">
       <input type="submit" name="submit" value="Submit">
     </form>
-    {% if wikiText %}
+    <br>
+	
+	<div>
+	<button id="tab1">Wikipedia</button>
+	<button id="tab2">Flickr</button>
+	<button id="tab3">Twitter</button>
+	</div>
+	</center>
+	
+	{% if wikiText %}
       <img src={{wikiImage}}></img>
 	  {{wikiText}}!
     {% endif %}
